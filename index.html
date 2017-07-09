@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tab选项卡</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<div class="js-tab tab" data-config='{
+	                      "triggerType":"click",
+                          "effect":"fae",
+                          "invoke":4,
+                          "auto":3000}'>
+		<ul class="tab-nav">
+			<li class="actived"><a href="javascript:;">新闻</a></li>
+			<li><a href="javascript:;">娱乐</a></li>
+			<li><a href="javascript:;">电影</a></li>
+			<li><a href="javascript:;">科技</a></li>
+		</ul>
+	    <div class="content-wrap ">
+	    	<div class="content-item cur"><img src="images/a.jpg" alt="this is a picture"></div>
+	    	<div class="content-item"><img src="images/b.jpg" alt="this is a picture"></div>
+	    	<div class="content-item"><img src="images/c.jpg" alt="this is a picture"></div>
+	    	<div class="content-item"><img src="images/d.jpg" alt="this is a picture"></div>
+	    </div>
+	</div>
+	<div class="js-tab1 tab" data-config='{
+	                      "triggerType":"mouseover",
+                          "effect":"fade",
+                          "invoke":2
+                                     }'>
+		<ul class="tab-nav">
+			<li class="actived"><a href="javascript:;">新闻</a></li>
+			<li><a href="javascript:;">娱乐</a></li>
+			<li><a href="javascript:;">电影</a></li>
+			<li><a href="javascript:;">科技</a></li>
+		</ul>
+	    <div class="content-wrap ">
+	    	<div class="content-item cur"><img src="images/a.jpg" alt="this is a picture"></div>
+	    	<div class="content-item"><img src="images/b.jpg" alt="this is a picture"></div>
+	    	<div class="content-item"><img src="images/c.jpg" alt="this is a picture"></div>
+	    	<div class="content-item"><img src="images/d.jpg" alt="this is a picture"></div>
+	    </div>
+	</div>
+	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/tab.js"></script>
+	<script>
+		//Tab.init($(".js-tab"));
+		$(".js-tab").tab()
+		$(".js-tab1").tab()
+	</script>
+</body>
+</html>
